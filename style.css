@@ -1,30 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .parallax {
   min-height: 600px;
+  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-}
-.parallax p {
-  font-size: 24px;
-  color: #f5f5f5;
-  text-align: center;
-  line-height: 60px;
-}
-.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 60px;
-  text-align: center;
-  padding-top: 60px;
-  line-height: 100px;
+  background-repeat: no-repeat;
 }
 
 .parimg1 {
-  background-image: url("images/parimg1.jpg");
+  background-image: url("img/parimg1.jpg");
 }
 
 .parimg2 {
-  background-image: url("images/parimg2.jpg");
+  background-image: url("img/parimg2.jpg");
 }
 
 * {
@@ -44,16 +33,94 @@ body {
 }
 
 .jumbotron {
-  margin-bottom: 0;
+  margin: 0;
+}
+
+a {
+  color: #8860e7;
+  text-shadow: 1px 2px 5px #8860e7;
+  text-decoration: none;
+}
+a:hover {
+  color: #b195fa;
+  text-shadow: 1px 2px 5px #b195fa;
+}
+
+header a {
+  color: #eee;
+  text-shadow: 1px 2px 8px #eee;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.navbar-collapse {
+  background-color: #111;
+  padding: 2rem;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 100vw;
+  white-space: nowrap;
+  z-index: 10;
+  text-align: center;
+}
+
+.nav-link {
+  color: #eee !important;
+  text-shadow: 1px 2px 5px #eee !important;
+}
+.nav-link.active {
+  color: #8860e7 !important;
+  text-shadow: 1px 2px 5px #8860e7 !important;
+}
+.nav-link:hover {
+  color: #b195fa !important;
+  text-shadow: 1px 2px 5px #b195fa !important;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
   padding: 2.5rem 0;
   text-align: center;
-  color: #f1795b;
+  color: #eee;
   background-color: #000;
   border-top: 0.05rem solid #111;
 }
-footer a {
-  color: #8860e7;
+
+.par-bg {
+  background-color: #00000077;
+  width: 100%;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+}
+
+p, h1 {
+  color: #eee;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 2px 2px #00000077;
+}
+
+.par-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  margin-top: -4rem;
+}
+.par-center p, .par-center h1 {
+  padding: 1rem;
 }

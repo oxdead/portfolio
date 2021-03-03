@@ -6,42 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oleksiy's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
 
+
+
     <!-- First Parallax Section -->
     <div class="jumbotron parallax parimg1">
-        <h1 class="display-3">Here is a heading 1</h1>
-        <p class="lead">Here is a short description 1</p>
-        <p class="lead">
-            <a class="btn btn-info btn-lg btn-md" href="#" role="button">button 1</a>
-        </p>
+        <header class="d-flex justify-content-end justify-content-md-center">
+            <ul class="nav justify-content-center par-bg blur d-none d-md-flex">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#other-projects">Other projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact me</a>
+                </li>
+            </ul>
+
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex d-md-none position-fixed" style="background-color: transparent;">
+                <div class="container-fluid justify-content-end">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+                      <a class="nav-link" href="#about">About</a>
+                      <a class="nav-link" href="#projects">Projects</a>
+                      <a class="nav-link" href="#other-projects">Other projects</a>
+                      <a class="nav-link" href="#contact-me">Contact me</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+        </header>
+        <div class="container par-center">
+            <div class="par-bg blur">
+                <p class="lead m-0">Hello, I'm Oleksiy Striletskii,</p>
+            </div>
+            <div class="par-bg blur">
+                <h1 class="display-3 m-0">Web Developer,</h1>
+            </div>
+            <div class="par-bg blur">
+                <p class="lead m-0">living in Ukraine.</p>
+            </div>
+            
+        </div>
     </div>
     
 
-    <div class="panel">
-        Panel1
+    <div class="panel" id="about">
+        I'm looking for a ukrainian company to hire me as a junior front/back/full....
+        my skills....
+        linkedin, github, email
+
     </div>
 
     <!-- Second Parallax Section -->
     <div class="jumbotron parallax parimg2">
-        <h1 class="display-3">Here is a heading 2</h1>
-        <p class="lead">Here is a short description 2</p>
-        <p class="lead">
-            <a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button">button 2</a>
-        </p>
+        <h1 class="display-3">floating tags</h1>
+        <p class="lead">floating tags</p>
     </div>
     
-    <div class="panel">
-        Panel2
+    <div class="panel" id="projects">
+        My first projects
+    </div>
+
+    <div class="panel" id="other-projects">
+        Other projects, not related to web development
     </div>
 
 
     <!-- Footer Section -->
-    <footer>
-        <p>Jumbotron/parallax<a href="#">Link here</a></p>
+    <footer id="contact-me">
+        <a href="#!">contacts: linkedin, github, email</a>
         <p>
             <a href="#">Back to top</a>
         </p>

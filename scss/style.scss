@@ -1,0 +1,124 @@
+@use 'var';
+@use 'parallax';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+.panel{
+    background-color: var.$c-bg;
+    min-height: 20rem;
+}   
+
+.jumbotron {
+    margin: 0;
+}
+
+a {
+    color: var.$c-link;
+    text-shadow: 1px 2px 5px var.$c-link;
+    text-decoration: none;
+    &:hover{
+        color: var.$c-linkhov;
+        text-shadow: 1px 2px 5px var.$c-linkhov;
+    }
+}
+
+header{
+    a{
+        color: var.$c-text;
+        text-shadow: 1px 2px 8px var.$c-text;
+    }
+}
+
+.navbar{
+    z-index: 10;
+}
+
+.navbar-collapse{
+    background-color: #111;
+    padding: 2rem;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width:100vw;
+    white-space: nowrap;
+    z-index: 10;
+    text-align: center;
+}
+
+.nav-link{
+    color: var.$c-text !important;
+    text-shadow: 1px 2px 5px var.$c-text !important;
+
+    &.active{
+        color: var.$c-link !important;
+        text-shadow: 1px 2px 5px var.$c-link !important;
+    }
+
+    &:hover{
+        color: var.$c-linkhov !important;
+        text-shadow: 1px 2px 5px var.$c-linkhov !important;
+    }
+}
+
+header{
+    display:flex;
+    justify-content: center;
+}
+
+footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    color: var.$c-text;
+    background-color: #000;
+    border-top: 0.05rem solid #111;
+
+
+}
+
+
+
+.par-bg{
+    background-color: #00000077;
+    width: 100%;
+    min-height: 4rem;
+    display:flex;
+    align-items: center;
+}
+
+.blur{
+    backdrop-filter: blur(2px);
+}
+
+p, h1 {
+    color: var.$c-text;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 2px 2px var.$c-shadow;
+}
+
+
+.par-center {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    margin-top: -4rem;
+
+    p, h1 {
+        padding: 1rem;
+    }
+    
+}

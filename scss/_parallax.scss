@@ -1,0 +1,17 @@
+.parallax {
+    min-height: 600px;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.parimg1 {
+    background-image: url("img/parimg1.jpg");
+}
+
+.parimg2 {
+    background-image: url("img/parimg2.jpg");
+}
