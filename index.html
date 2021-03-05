@@ -9,10 +9,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
+    
+    <script src="https://kit.fontawesome.com/c623a28647.js" crossorigin="anonymous"></script>
+
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
 </head>
 <body>
 
-
+    <div class="back-to-top"><a href="#"></a></div>
 
     <!-- First Parallax Section -->
     <div class="jumbotron parallax parimg1">
@@ -53,27 +58,51 @@
               </nav>
 
         </header>
-        <div class="container par-center">
+        <main class="container par-center">
             <div class="par-bg blur">
-                <p class="lead m-0">Hello, I'm Oleksiy Striletskii,</p>
+                <p class="m-0">Hello, I'm Oleksiy Striletskii,</p>
             </div>
             <div class="par-bg blur">
-                <h1 class="display-3 m-0">Web Developer,</h1>
+                <h1 class="textured-text display-3 m-0 p-0">Web Developer,</h1>
             </div>
             <div class="par-bg blur">
-                <p class="lead m-0">living in Ukraine.</p>
+                <p class="m-0">Living in Ukraine.</p>
             </div>
             
-        </div>
+        </main>
     </div>
     
 
-    <div class="panel" id="about">
-        I'm looking for a ukrainian company to hire me as a junior front/back/full....
-        my skills....
-        linkedin, github, email
-
-    </div>
+    <section class="panel-grad" id="about">
+        <div class="container">
+            <div class="row p-5 justify-content-center">
+                <div class="col-12 col-md-8 p-5">
+                    <p>I'm passionate programmer novice and i'm looking for an ukrainian company to hire me as a junior web developer.</p>
+                    <br>
+                    <p>I want to become a back-end engineer, but I'll consider any job offers (front-end or back-end).</p>
+                    <br>
+                    <div class="socials d-flex flex-row flex-wrap justify-content-center">
+                        <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                        <a href="mailto:aerahproject@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+                        <a href="https://github.com/oxdead" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 skills-border d-flex flex-column justify-content-center">
+                    <p class="text-center">My skills:</p>
+                    <ul class="skill-set d-flex flex-column justify-content-center">
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Apache</li>
+                        <li>Git</li>
+                        <li>C/C++</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Second Parallax Section -->
     <div class="jumbotron parallax parimg2">
@@ -81,21 +110,135 @@
         <p class="lead">floating tags</p>
     </div>
     
-    <div class="panel" id="projects">
-        My first projects
-    </div>
+    <section class="panel-grad">
+        <div class="container">
+            <div id="projects">
+                <br><br>
+                <h2>My project examples:</h2>
+                <br>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <a class="w-100" href="http://mikespizza.pp.ua" target="_blank"><img class="w-100" src="img/mikespizza-pp-ua.jpg" alt="mikespizza.pp.ua"></a>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                        <a class="w-100" href="http://mikespizza.pp.ua" target="_blank"><p class="text-start p-2 pb-0">mikespizza.pp.ua - my first site, built on vanilla PHP.</p></a>
+                        <p class="text-start text-secondary p-2 pt-0 fs-5 fst-italic">HTML, CSS, Javascript, PHP, Materialize CSS library</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <a class="w-100" href="https://lomarket.website" target="_blank"><img class="w-100" src="img/lomarket-website.jpg" alt="lomarket.website"></a>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                        <a class="w-100" href="https://lomarket.website" target="_blank"><p class="text-start p-2 pb-0">lomarket.website - audio gear e-commerce site example.</p></a>
+                        <p class="text-start text-secondary p-2 pt-0 fs-5 fst-italic">Opencart framework</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="other-projects">
+                <h2>Other pet-projects, not related to web development</h2>
+                <br>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <video
+                        class="video-js vjs-theme-fantasy"
+                        controls 
+                        muted 
+                        preload="auto"
+                        width="480"
+                        height="360"
+                        poster=""
+                        data-setup="{}">
+                            <source src="video/pluginmanager.mp4" type="video/mp4">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript and update web browser that supports 
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">HTML5 video</a>
+                            </p>
+                        </video>
+                    </div>
+                    <div class="col-12 col-lg-6 p-3">
+                        <p class="text-start">Plugin manager extension for application. Powerful tool that was quiet popular until it became deprecated.</p>
+                        <p class="text-start text-secondary fs-5 fst-italic">C/C++, Objective-C</p>
+                    </div>
+                </div>
+                <br>
 
-    <div class="panel" id="other-projects">
-        Other projects, not related to web development
-    </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <video
+                        class="video-js vjs-theme-fantasy"
+                        controls 
+                        muted 
+                        preload="auto"
+                        width="480"
+                        height="360"
+                        poster=""
+                        data-setup="{}">
+                            <source src="video/volumemeter.mp4" type="video/mp4">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript and update web browser that supports 
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">HTML5 video</a>
+                            </p>
+                        </video>
+                    </div>
+                    <div class="col-12 col-lg-6 p-3">
+                        <p class="text-start">Volume adjustment and peak/clip metering tool.</p>
+                        <p class="text-start text-secondary fs-5 fst-italic">C/C++, JUCE</p>
+                    </div>
+                </div>
+                <br>
+
+
+
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <video
+                        class="video-js vjs-theme-fantasy"
+                        controls 
+                        muted 
+                        preload="auto"
+                        width="480"
+                        height="360"
+                        poster=""
+                        data-setup="{}">
+                            <source src="video/lphpfilter.mp4" type="video/mp4">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript and update web browser that supports 
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">HTML5 video</a>
+                            </p>
+                        </video>
+                    </div>
+                    <div class="col-12 col-lg-6 p-3">
+                        <p class="text-start">Lowpass/Highpass filter plugin.</p>
+                        <p class="text-start text-secondary fs-5 fst-italic">C/C++, iPlug2</p>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Footer Section -->
     <footer id="contact-me">
-        <a href="#!">contacts: linkedin, github, email</a>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
+        <br><br><br>
+        <h2>Contacts:</h2>
+        <br>
+        <div class="socials d-flex flex-row flex-wrap justify-content-center">
+            <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            <a href="mailto:aerahproject@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
+            <a href="https://github.com/oxdead" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+        </div>
+        <br>
+        <br><br>
+        <p>&copy; 2021 oleksiistriletskii.website</p>
     </footer>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>
 </html>
