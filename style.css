@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .parallax {
-  min-height: 600px;
-  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
@@ -10,10 +8,14 @@
 
 .parimg1 {
   background-image: url("img/parimg1.jpg");
+  min-height: 600px;
+  height: 100vh;
 }
 
 .parimg2 {
   background-image: url("img/parimg2.jpg");
+  min-height: 30rem;
+  height: 30rem;
 }
 
 * {
@@ -135,7 +137,7 @@ h2 {
 }
 
 .skills-border {
-  border: 2px solid #888;
+  border: 2px solid #333;
   border-radius: 15px;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -196,10 +198,36 @@ h2 {
 }
 
 .socials a {
+  position: relative;
   padding: 1rem;
   text-shadow: none;
-  transition: text-shadow 0.5s ease;
+  z-index: 1;
+  transition: text-shadow 0.5s ease-in;
 }
 .socials a:hover {
   text-shadow: 0px 0px 8px #b195fa;
+}
+.socials a:hover::before {
+  height: 8.1rem;
+}
+.socials a::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 8rem;
+  height: 2rem;
+  left: -1rem;
+  top: -4.1rem;
+  z-index: -1;
+  transition: height 2s;
+  transition-timing-function: cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+.socials-bg {
+  overflow: hidden;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
 }
