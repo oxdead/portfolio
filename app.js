@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', (e) =>{
+    var jarallax = new Jarallax();
+    jarallax.addAnimation(".ghost1", [{progress:'0%', top:'0%'}, {progress:'100%', top:'30%'}]);
+    jarallax.addAnimation(".ghost2", [{progress:'0%', top:'0%'}, {progress:'100%', top:'80%'}]);
+    
 
     document.querySelectorAll(".nav-link").forEach((navlink) => {
         navlink.addEventListener('click', (e) => {
@@ -28,6 +32,7 @@ document.addEventListener('DOMContentLoaded', (e) =>{
             e.currentTarget.style.background = 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #231437, #162520)';
         });
     });
-    
+
 });
+
 

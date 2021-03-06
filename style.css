@@ -1,21 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-.parallax {
+.parallax-img1 {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-
-.parimg1 {
+  position: relative;
+  overflow: hidden;
   background-image: url("img/parimg1.jpg");
   min-height: 600px;
   height: 100vh;
+  z-index: -10;
 }
 
-.parimg2 {
+.ghost {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/parimg1.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  z-index: -9;
+}
+
+.ghost1 {
+  opacity: 0.3;
+}
+
+.ghost2 {
+  opacity: 0.2;
+}
+
+.parallax-img2 {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
   background-image: url("img/parimg2.jpg");
   min-height: 30rem;
   height: 30rem;
+  z-index: -8;
 }
 
 * {
