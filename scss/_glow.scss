@@ -1,0 +1,28 @@
+@use 'v';
+
+.glow {
+    color: v.$c-glow;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0.25rem v.$c-tag, 0 0 0.5rem v.$c-tag, 0 0 0.75rem v.$c-glow, 0 0 1.0rem v.$c-glow;
+    }
+
+    to {
+        text-shadow: 0 0 0.5rem v.$c-tag, 0 0 0.75rem v.$c-glow2, 0 0 1.0rem v.$c-glow2, 0 0 1.25rem v.$c-glow2;
+    }
+}
+
+@keyframes glow{
+    from {
+        text-shadow: 0 0 0.25rem v.$c-tag, 0 0 0.5rem v.$c-tag, 0 0 0.75rem v.$c-glow, 0 0 1.0rem v.$c-glow;
+    }
+
+    to {
+        text-shadow: 0 0 0.5rem v.$c-tag, 0 0 0.75rem v.$c-glow2, 0 0 1.0rem v.$c-glow2, 0 0 1.25rem v.$c-glow2;
+    }
+}
+

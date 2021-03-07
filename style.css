@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+.glow {
+  color: #8BD7A8;
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0.25rem #B7EDCF, 0 0 0.5rem #B7EDCF, 0 0 0.75rem #8BD7A8, 0 0 1rem #8BD7A8;
+  }
+  to {
+    text-shadow: 0 0 0.5rem #B7EDCF, 0 0 0.75rem #4f6b5c, 0 0 1rem #4f6b5c, 0 0 1.25rem #4f6b5c;
+  }
+}
 .parallax-img1 {
   background-attachment: fixed;
   background-size: cover;
@@ -40,11 +54,113 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   overflow: hidden;
-  position: relative;
   background-image: url("img/parimg2.jpg");
   min-height: 30rem;
   height: 30rem;
   z-index: -8;
+}
+
+.fixed-width {
+  position: relative;
+  min-width: 1000px;
+  max-width: 3000px;
+  min-height: 28rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .fixed-width {
+    margin-left: calc((100% - 1000px)*(0.5));
+    margin-right: calc((100% - 1000px)*(0.5));
+  }
+}
+h6 {
+  position: absolute;
+  color: #B7EDCF;
+  font-family: "Exo 2", sans-serif !important;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  cursor: pointer;
+}
+h6:hover {
+  opacity: 0;
+}
+
+.near {
+  font-size: 3.5rem;
+}
+.near:nth-of-type(1) {
+  left: 17%;
+  top: 15%;
+}
+.near:nth-of-type(2) {
+  left: 50%;
+  top: 50%;
+}
+.near:nth-of-type(3) {
+  left: 71%;
+  top: 27%;
+}
+.near:nth-of-type(4) {
+  left: 80%;
+  top: 70%;
+}
+
+.mid {
+  font-size: 2.2rem;
+}
+.mid:nth-of-type(5) {
+  left: 28%;
+  top: 60%;
+}
+.mid:nth-of-type(6) {
+  left: 50%;
+  top: 23%;
+}
+
+.far {
+  font-size: 1.3rem;
+}
+.far:nth-of-type(7) {
+  left: 10%;
+  top: 40%;
+}
+.far:nth-of-type(8) {
+  left: 35%;
+  top: 48%;
+}
+.far:nth-of-type(9) {
+  left: 70%;
+  top: 58%;
+}
+
+.furthest {
+  font-size: 0.8rem;
+}
+.furthest:nth-of-type(10) {
+  left: 26%;
+  top: 52%;
+}
+.furthest:nth-of-type(11) {
+  left: 44%;
+  top: 35%;
+}
+.furthest:nth-of-type(12) {
+  left: 48%;
+  top: 48%;
+}
+.furthest:nth-of-type(13) {
+  left: 62%;
+  top: 50%;
+}
+.furthest:nth-of-type(14) {
+  left: 65%;
+  top: 75%;
+}
+.furthest:nth-of-type(15) {
+  left: 80%;
+  top: 47%;
 }
 
 * {
@@ -62,10 +178,6 @@ body {
   background-color: #222;
   min-height: 20rem;
   background: radial-gradient(at center, #231437, #162520);
-}
-
-.jumbotron {
-  margin: 0;
 }
 
 a {
