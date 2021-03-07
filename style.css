@@ -92,19 +92,19 @@ h6:hover {
 }
 .near:nth-of-type(1) {
   left: 17%;
-  top: 15%;
+  /*top:15%;*/
 }
 .near:nth-of-type(2) {
   left: 50%;
-  top: 50%;
+  /*top:50%;*/
 }
 .near:nth-of-type(3) {
   left: 71%;
-  top: 27%;
+  /*top:27%;*/
 }
 .near:nth-of-type(4) {
   left: 80%;
-  top: 70%;
+  /*top:70%;*/
 }
 
 .mid {
@@ -112,11 +112,11 @@ h6:hover {
 }
 .mid:nth-of-type(5) {
   left: 28%;
-  top: 60%;
+  /*top:60%;*/
 }
 .mid:nth-of-type(6) {
   left: 50%;
-  top: 23%;
+  /*top:23%;*/
 }
 
 .far {
@@ -124,15 +124,15 @@ h6:hover {
 }
 .far:nth-of-type(7) {
   left: 10%;
-  top: 40%;
+  /*top:40%;*/
 }
 .far:nth-of-type(8) {
   left: 35%;
-  top: 48%;
+  /*top:48%;*/
 }
 .far:nth-of-type(9) {
   left: 70%;
-  top: 58%;
+  /*top:58%;*/
 }
 
 .furthest {
@@ -140,27 +140,27 @@ h6:hover {
 }
 .furthest:nth-of-type(10) {
   left: 26%;
-  top: 52%;
+  /*top:52%;*/
 }
 .furthest:nth-of-type(11) {
   left: 44%;
-  top: 35%;
+  /*top:35%;*/
 }
 .furthest:nth-of-type(12) {
   left: 48%;
-  top: 48%;
+  /*top:48%;*/
 }
 .furthest:nth-of-type(13) {
   left: 62%;
-  top: 50%;
+  /*top:50%;*/
 }
 .furthest:nth-of-type(14) {
   left: 65%;
-  top: 75%;
+  /*top:75%;*/
 }
 .furthest:nth-of-type(15) {
   left: 80%;
-  top: 47%;
+  /*top:47%;*/
 }
 
 * {
