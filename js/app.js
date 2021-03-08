@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', (e) =>{
     jarallax.addAnimation(".near:nth-of-type(2)", [{progress:'0%', top:'5%'}, {progress:'100%', top:'110%'}]);
     jarallax.addAnimation(".near:nth-of-type(3)", [{progress:'0%', top:'-35%'}, {progress:'100%', top:'110%'}]);
     jarallax.addAnimation(".near:nth-of-type(4)", [{progress:'0%', top:'40%'}, {progress:'100%', top:'110%'}]);
-    
 
     jarallax.addAnimation(".mid:nth-of-type(5)", [{progress:'0%', top:'-35%'}, {progress:'100%', top:'200%'}]);
     jarallax.addAnimation(".mid:nth-of-type(6)", [{progress:'0%', top:'-120%'}, {progress:'100%', top:'200%'}]);
@@ -22,15 +21,11 @@ document.addEventListener('DOMContentLoaded', (e) =>{
     jarallax.addAnimation(".furthest:nth-of-type(13)", [{progress:'0%', top:'-260%'}, {progress:'100%', top:'477%'}]);
     jarallax.addAnimation(".furthest:nth-of-type(14)", [{progress:'0%', top:'-220%'}, {progress:'100%', top:'477%'}]);
     jarallax.addAnimation(".furthest:nth-of-type(15)", [{progress:'0%', top:'-285%'}, {progress:'100%', top:'477%'}]);
-    
-
-
 
     document.querySelectorAll(".nav-link").forEach((navlink) => {
         navlink.addEventListener('click', (e) => {
             e.stopPropagation();
-            const sibs = document.querySelectorAll(".nav-link");
-            sibs.forEach((sib) =>{
+            document.querySelectorAll(".nav-link").forEach((sib) =>{
                 if(sib.href == e.currentTarget.href) {
                     sib.classList.add("active");
                 }
@@ -50,7 +45,6 @@ document.addEventListener('DOMContentLoaded', (e) =>{
             const mouseXpercentage = Math.round(e.pageX / docWidth * 100);
             const mouseYpercentage = Math.round(e.pageY / docHeight * 100);
     
-            //const panelGrad = document.querySelector(".panel-grad");
             e.currentTarget.style.background = 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #231437, #162520)';
         });
     });
