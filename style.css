@@ -10,7 +10,7 @@
     text-shadow: 0 0 0.25rem #B7EDCF, 0 0 0.5rem #B7EDCF, 0 0 0.75rem #8BD7A8, 0 0 1rem #8BD7A8;
   }
   to {
-    text-shadow: 0 0 0.5rem #B7EDCF, 0 0 0.75rem #4f6b5c, 0 0 1rem #4f6b5c, 0 0 1.25rem #4f6b5c;
+    text-shadow: 0 0 0.5rem #55d38e, 0 0 0.75rem #587965, 0 0 1rem #587965, 0 0 1.25rem #587965;
   }
 }
 .parallax-img1 {
@@ -67,6 +67,7 @@
   min-height: 28rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  perspective: 800px;
 }
 
 @media (max-width: 1000px) {
@@ -172,6 +173,7 @@ h6:hover {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
+  z-index: 0;
 }
 
 .panel-grad {
@@ -190,6 +192,15 @@ a:hover {
   text-shadow: 1px 2px 5px #b195fa;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 header a {
   color: #eee;
   text-shadow: 1px 2px 8px #eee;
@@ -227,11 +238,6 @@ header a {
 .nav-link:hover {
   color: #b195fa !important;
   text-shadow: 1px 2px 5px #b195fa !important;
-}
-
-header {
-  display: flex;
-  justify-content: center;
 }
 
 footer {
@@ -277,6 +283,38 @@ h2 {
   padding: 1rem;
 }
 
+.move-in-1 {
+  position: relative;
+  left: -100vw;
+  animation-name: move-in;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-timing-function: cubic-bezier(0, 0, 0.6, -0.3);
+  animation-iteration-count: unset;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.move-in-2 {
+  position: relative;
+  left: -100vw;
+  animation-name: move-in;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-timing-function: cubic-bezier(1, 0, -1, 0);
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-in {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
 .skills-border {
   border: 2px solid #333;
   border-radius: 15px;

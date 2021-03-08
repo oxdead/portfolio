@@ -12,6 +12,7 @@
 body {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
+    z-index: v.$z-body;
 }
 
 .panel-grad {
@@ -31,6 +32,13 @@ a {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    z-index: v.$z-header;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     a {
         color: v.$c-text;
         text-shadow: 1px 2px 8px v.$c-text;
@@ -38,7 +46,7 @@ header {
 }
 
 .navbar {
-    z-index: 10;
+    z-index: v.$z-nav;
 }
 
 .navbar-dark .navbar-toggler {
@@ -53,7 +61,7 @@ header {
     right: 0;
     width: 100vw;
     white-space: nowrap;
-    z-index: 10;
+    z-index: v.$z-nav;
     text-align: center;
     font-size: 2rem;
 }
@@ -71,11 +79,6 @@ header {
         color: v.$c-linkhov !important;
         text-shadow: 1px 2px 5px v.$c-linkhov !important;
     }
-}
-
-header {
-    display: flex;
-    justify-content: center;
 }
 
 footer {
@@ -121,6 +124,43 @@ h2 {
         padding: 1rem;
     }
 }
+
+.move-in-1{
+    position:relative;
+    left: -100vw;
+    animation-name: move-in;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: cubic-bezier(0, 0.0, 0.6, -0.3);
+    animation-iteration-count: unset;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.move-in-2{
+    position:relative;
+    left: -100vw;
+    animation-name: move-in;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-timing-function: cubic-bezier(1, 0, -1, 0);
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    
+}
+
+
+@keyframes move-in{
+    from{
+        left: -100vw;
+    }
+
+    to{
+        left: 0vw;
+    }
+}
+
 
 .skills-border {
     border: 2px solid v.$c-grey;

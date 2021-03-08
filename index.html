@@ -19,62 +19,65 @@
 
     <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </head>
 <body>
 
     <div class="back-to-top"><a href="#"></a></div>
 
     
+    <header class="d-flex justify-content-end justify-content-md-center">
+        <ul class="nav justify-content-center par-bg blur d-none d-md-flex">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#other-projects">Other projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contact me</a>
+            </li>
+        </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex d-md-none position-fixed" style="background-color: transparent;">
+            <div class="container-fluid justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#other-projects">Other projects</a>
+                  <a class="nav-link" href="#contact-me">Contact me</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
     <!-- First Parallax Section -->
     <div class="parallax-img1">
         <div class="ghost ghost1"></div>
         <div class="ghost ghost2"></div>
 
-        <header class="d-flex justify-content-end justify-content-md-center">
-            <ul class="nav justify-content-center par-bg blur d-none d-md-flex">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Welcome</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#other-projects">Other projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-me">Contact me</a>
-                </li>
-            </ul>
 
-            <nav class="navbar navbar-expand-lg navbar-dark d-flex d-md-none position-fixed" style="background-color: transparent;">
-                <div class="container-fluid justify-content-end">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Welcome</a>
-                      <a class="nav-link" href="#about">About</a>
-                      <a class="nav-link" href="#projects">Projects</a>
-                      <a class="nav-link" href="#other-projects">Other projects</a>
-                      <a class="nav-link" href="#contact-me">Contact me</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-
-        </header>
         <main class="container par-center">
             <div class="par-bg blur">
                 <p class="m-0">Hello, I'm Oleksiy Striletskii,</p>
             </div>
-            <div class="par-bg blur">
+            <div class="par-bg blur move-in-1">
                 <h1 class="textured-text display-3 m-0 p-0">Web Developer,</h1>
             </div>
-            <div class="par-bg blur">
+            <div class="par-bg blur move-in-2">
                 <p class="m-0">Living in Ukraine.</p>
             </div>
             
@@ -278,6 +281,5 @@
         <br><br>
         <p>&copy; 2021 oleksiidev.website</p>
     </footer>
-    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>
 </html>
